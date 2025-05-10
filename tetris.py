@@ -16,6 +16,7 @@ GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 ORANGE = (255, 165, 0)
 GRAY = (128, 128, 128)
+PINK = (255, 192, 203)  # Adding pink color
 
 # Game dimensions
 BLOCK_SIZE = 30
@@ -191,7 +192,7 @@ class Tetris:
                         self.game_over = True
 
             # Draw everything
-            self.screen.fill(BLACK)
+            self.screen.fill(PINK)  # Changed from BLACK to PINK
             self.draw_grid()
             self.draw_piece(self.current_piece)
             self.draw_next_piece()
